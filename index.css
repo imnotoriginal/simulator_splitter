@@ -34,7 +34,7 @@ body {
 .info__expression {
     display: inline;
     margin: 0;
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 .info__counter {
@@ -57,6 +57,7 @@ body {
     color: #fff;
     border: none;
     outline: none;
+    font-size: 1.2rem;
 }
 
 .answer__btn:active {
