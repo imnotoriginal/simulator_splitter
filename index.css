@@ -60,6 +60,10 @@ body {
     font-size: 1.2rem;
 }
 
+.answer__cant-answ-btn {
+    flex: 50%;
+}
+
 .answer__btn:active {
     background-color: #111;
 }
