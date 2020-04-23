@@ -8,9 +8,41 @@
 </head>
 
 <body>
+    <div id="root">
+        <div class="info">
+            <h1 :class="[{ 'info__expression_wrong-ans': wrongAnswer }, 'info__expression']">{{ dividend }} :
+                {{ divider }}
+                = {{ answer }}</h1>
+            <p class="info__counter">{{ counter }}</p>
+        </div>
 
+        <div>
+            <div class="answer">
+                <div class="answer-row">
+                    <button class="answer__btn" @click="handleAnswerBtnClick(1)">1</button>
+                    <button class="answer__btn" @click="handleAnswerBtnClick(2)">2</button>
+                    <button class="answer__btn" @click="handleAnswerBtnClick(3)">3</button>
+                </div>
+                <div class="answer-row">
+                    <button class="answer__btn" @click="handleAnswerBtnClick(4)">4</button>
+                    <button class="answer__btn" @click="handleAnswerBtnClick(5)">5</button>
+                    <button class="answer__btn" @click="handleAnswerBtnClick(6)">6</button>
+                </div>
+                <div class="answer-row">
+                    <button class="answer__btn" @click="handleAnswerBtnClick(7)">7</button>
+                    <button class="answer__btn" @click="handleAnswerBtnClick(8)">8</button>
+                    <button class="answer__btn" @click="handleAnswerBtnClick(9)">9</button>
+                </div>
+            </div>
+            <div class="answer-row">
+                <button class="answer__btn" @click="handleAnswerBtnClick(10)">10</button>
+                <button class="answer__btn answer__cant-answ-btn"
+                    @click="handleCanNotAnswerBtnClick">{{ failed ? "Далее" : "Не знаю" }}</button>
+            </div>
+        </div>
+    </div>
 </body>
-<script src="vue.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
 <script src="index.js"></script>
 
 </html>
