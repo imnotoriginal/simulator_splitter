@@ -11,16 +11,15 @@ body {
 body {
     margin: 0;
     font-family: sans-serif;
+    background-color: #f7f7f7;
 }
 
 #root {
     max-width: 360px;
     margin: 0 auto;
     height: 100%;
-    padding-top: 12px;
     display: flex;
     flex-direction: column;
-    background-color: #f7f7f7;
 }
 
 .info {
@@ -61,6 +60,7 @@ body {
 }
 
 .answer__cant-answ-btn {
+    max-width: 50%;
     flex: 50%;
 }
 
